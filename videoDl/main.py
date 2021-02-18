@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from videoDl import *
+from .videoDl import *
 import time
 
 
@@ -55,9 +55,13 @@ class Application(tk.Frame):
         self.url.delete(0, url_len)
 
 
-if __name__ == "__main__":
+def main():
     root = tk.Tk()
     app = Application(master=root)
     app.master.title("VideoDl")
     app.master.minsize(300, 400)
     app.mainloop()
+
+
+if __name__ == "__main__":
+    main()
