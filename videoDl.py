@@ -36,6 +36,8 @@ def mp4Option(name_of_video, video):
         'writethumbnail': True,
         'noplaylist': True,
         'nocheckcertificate': True,
+        'writesubtitles': True,
+        'subtitleslangs': {'es', 'es-ES', 'es-MX'},
         'postprocessors': [{
             'key': 'FFmpegVideoConvertor',
             "preferedformat": "mp4",
